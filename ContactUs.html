@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/ContactUs.css">
+    <title>Contact Us</title>
+   <link rel="icon" href="assets/img/honda_logo.png" />
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <nav>
+        <div class="nav-bar">
+          <i class="bx bx-menu sidebarOpen"></i>
+          <span class="logo navLogo"
+            ><a href="index.html">
+              <img
+                src="assets/img/honda_logo.svg"
+                alt="Logo Honda"
+                width="200"
+                height="auto"
+              /> </a
+          ></span>
+
+          <div class="menu">
+            <div class="logo-toggle">
+              <span class="logo"
+                ><a href="#"><img src="" alt="" /></a
+              ></span>
+              <i class="bx bx-x siderbarClose"></i>
+            </div>
+
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="innovation.html">Innovations</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="History.html">History</a></li>
+              <li><a href="AboutUs.html">About Us</a></li>
+              <li><a href="ContactUs.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+        <h1 class="page-title">Contact Us</h1>
+        <p class="info-text">
+            Untuk saran dan pendapat mengenai layanan dealer dan mobil Honda, Anda dapat menghubungi Customer Care di toll free <a href="tel:0-800-14-46632">(0-800-14-46632)</a> setiap hari kerja Senin - Jumat pukul 08.30 - 17.30 WIB atau melalui layanan chat 24 jam dengan Virtual Assistant Hani via WhatsApp.
+        </p>
+
+        <section class="contact-section">
+            <h2>Pilih salah satu cara dibawah ini untuk menghubungi Customer Care:</h2>
+            
+            <div class="contact-options">
+                <article class="contact-card">
+                    <a href="tel:+628001446632"><img src="assets/img/icons8-telephone-handset-94.png" alt="Phone Icon" class="contact-icon">
+                    <h3>Telepon</h3></a>
+                </article>
+                <article class="contact-card">
+                    <a href="#contact"><img src="assets/img/pesan.png" alt="Message Icon" class="contact-icon">
+                    <h3>Kirim Pesan</h3></a>
+                </article>
+            </div>
+        </section>
+
+        <section class="whatsapp-section">
+            <h2>Anda memiliki pertanyaan mengenai produk Honda? Hubungi kami via WhatsApp.</h2>
+            <article class="contact-card">
+                <a href="https://api.whatsapp.com/send/?phone=6281110676332&text=Hai+Hani%21+Saya+ingin+bertanya+tentang+produk+dan+layanan+Honda&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" ><img src="assets/img/icons8-whatsapp-94.png" alt="Message Icon" class="contact-icon">
+                <h3>Kirim Whatsapp</h3></a>
+            </article>
+            <a href="https://web.whatsapp.com/send/?phone=6281110676332&text=Hai+Hani%21+Saya+ingin+bertanya+tentang+produk+dan+layanan+Honda&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer"><button class="chat-button" aria-label="Chat on WhatsApp">Let's Chat</button></a>
+        </section>
+
+        
+    </main>
+
+    <aside class="floating-chat">
+        <a href="https://api.whatsapp.com/send/?phone=6281110676332&text=Hai+Hani%21+Saya+ingin+bertanya+tentang+produk+dan+layanan+Honda&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+        <img src="assets/img/hani.png" alt="Chat Icon" aria-label="Open chat">
+    </a>
+    </aside>
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact-us">
+      <div class="container">
+        <h2>Hubungi Kami</h2>
+        <form id="contact-form" action="#" method="POST">
+          <input type="text" name="name" placeholder="Nama Anda" required />
+          <input type="email" name="email" placeholder="Email Anda" required />
+          <input
+            type="number"
+            name="Phonenumber"
+            placeholder="Nomor Telepon Anda"
+            required
+          />
+          <input type="text" name="subject" placeholder="Subjek" required />
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Pesan Anda"
+            required
+          ></textarea>
+          <div class="form-submit-btn">
+          <input type="submit" value="Kirim" />
+        </div>
+        </form>
+      </div>
+    </section>
+    <script src="assets/js/form.js"></script>
+    
+    <!--Footer-->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div class="footer__content">
+          <a href="index.html" class="footer__logo">
+            <img
+              src="assets/img/honda_logo.svg"
+              alt="Logo Honda"
+              width="200"
+              height="auto"
+            />
+          </a>
+          <p class="footer__description">
+            Experience the excellence of Honda,
+            <br />
+            vehicles known for innovation and quality.
+          </p>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Company</h3>
+          <ul class="footer__links">
+            <li>
+              <a href="AboutUs.html" class="footer__links">About</a>
+            </li>
+            <li>
+              <a href="History.html" class="footer__links">History</a>
+            </li>
+            <li>
+              <a href="store.html" class="footer__links">Shop</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Information</h3>
+          <ul class="footer__links">
+              <a href="ContactUs.html" class="footer__links">Contact us</a>
+            </li>
+            <li>
+              <a href="#" class="footer__links">Services</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Follow us</h3>
+          <ul class="footer__social">
+           <a href="https://www.facebook.com/hondaisme" target="_blank" class="footer__social-link">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/hondaisme" target="_blank" class="footer__social-link">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.twitter.com/hondaisme" target="_blank" class="footer__social-link">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/hondaisme" target="_blank" class="footer__social-link">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <span class="footer__copy">
+        &#169;
+        <a target="_blank" href="index.html" class="footer__dev-link">Honda 2024</a>
+        All rights reserved
+        <p id="date"></p>
+      </span>
+    </footer>
+    <!-- Scroll Up -->
+    <a href="" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-s-line"></i>
+    </a>
+    <!-- Scripts -->
+    <script src="assets/js/script.js"></script>  
+</body>
+</html>

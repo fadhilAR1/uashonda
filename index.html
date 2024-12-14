@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Honda Automotive</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" href="assets/img/honda_logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/featuredcar.js"></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <section class="header">
+      <nav>
+        <div class="nav-bar">
+          <i class="bx bx-menu sidebarOpen"></i>
+          <span class="logo navLogo"
+            ><a href="#">
+              <img
+                src="assets/img/honda_logo.svg"
+                alt="Logo Honda"
+                width="200"
+                height="auto"
+              /> </a
+          ></span>
+
+          <div class="menu">
+            <div class="logo-toggle">
+              <span class="logo"
+                ><a href="#"><img src="" alt="" /></a
+              ></span>
+              <i class="bx bx-x siderbarClose"></i>
+            </div>
+
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="innovation.html">Innovations</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="History.html">History</a></li>
+              <li><a href="AboutUs.html">About Us</a></li>
+              <li><a href="ContactUs.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Slider Section -->
+      <div class="slider">
+        <div class="slides">
+          <img class="slide" src="assets/img/Image1.png" alt="Image #1" />
+          <img class="slide" src="assets/img/image2.png" alt="Image #2" />
+          <img class="slide" src="assets/img/image3.png" alt="Image #3" />
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+      </div>
+    </section>
+    <!--Innovation-->
+    <div class="innovation-content">
+      <div class="text-content">
+        <div class="header-content">TECHNOLOGICAL ACHIEVEMENTS</div>
+        <div class="title-content">IN-HOUSE INNOVATIONS</div>
+        <div class="description">
+          Honda's e:HEV technology innovatively combines dual electric motors
+          with an advanced combustion engine. This delivers exceptional fuel
+          efficiency, reduced emissions, and a powerful, smooth drive. It's a
+          leap forward in environmental sustainability and performance.
+        </div>
+        <a class="button-content" href="innovation.html">
+          Discover our solutions
+          <i class="fas fa-arrow-right"> </i>
+        </a>
+      </div>
+      <div class="image-container">
+        <img
+          alt="Technological components Honda"
+          height="400"
+          src="assets/img/ehev.jpeg"
+          width="600"
+        />
+      </div>
+    </div>
+    <!-- Featured Cars Section -->
+    <section class="featured">
+      <div class="title">CHOOSE YOUR CAR!</div>
+      <div class="filter-buttons">
+        <button class="filter-button active" data-filter="all">ALL</button>
+        <button class="filter-button" data-filter="mpv">MPV</button>
+        <button class="filter-button" data-filter="sedan">SEDAN</button>
+        <button class="filter-button" data-filter="sport">SPORT</button>
+        <button class="filter-button" data-filter="suv">SUV</button>
+        <button class="filter-button" data-filter="hatchback">
+          CITY AND HATCHBACK
+        </button>
+      </div>
+
+      <div class="car-grid">
+        <!-- Honda Brio -->
+        <div class="car-card filter hatchback">
+          <img
+            src="assets/img/brio_orange.png"
+            alt="Honda Brio"
+            width="300"
+            height="200"
+          />
+          <div class="car-info">
+            <h3>Honda Brio</h3>
+            <p>City and Hatchback</p>
+            <div class="price">Rp167.900.000</div>
+          </div>
+          <a href="Brio.html"
+            ><div class="shop">
+              <p>Buy Now</p>
+            </div></a
+          >
+        </div>
+        <!-- Honda Civic RS -->
+        <div class="car-card filter sedan">
+          <img
+            src="assets/img/Civicrs_cover.png"
+            alt="Honda Civic RS"
+            width="300"
+            height="200"
+          />
+          <div class="car-info">
+            <h3>Honda Civic RS</h3>
+            <p>Sedan</p>
+            <div class="price">Rp616.800.000</div>
+          </div>
+          <a href="CivicRS.html"
+            ><div class="shop">
+              <p>Buy Now</p>
+            </div></a
+          >
+        </div>
+        <!-- Honda Mobilio -->
+        <div class="car-card filter mpv">
+          <img
+            src="assets/img/mobilio_cover.png"
+            alt="Honda Mobilio"
+            width="300"
+            height="200"
+          />
+          <div class="car-info">
+            <h3>Honda Mobilio</h3>
+            <p>MPV</p>
+            <div class="price">Rp239.600.000</div>
+          </div>
+          <a href="mobilio.html"
+            ><div class="shop">
+              <p>Buy Now</p>
+            </div></a
+          >
+        </div>
+        <!-- Honda HR-V -->
+        <div class="car-card filter suv">
+          <img
+            src="assets/img/hrv_cover.png"
+            alt="Honda HR-V"
+            width="300"
+            height="200"
+          />
+          <div class="car-info">
+            <h3>Honda HR-V</h3>
+            <p>SUV</p>
+            <div class="price">Rp383.900.000</div>
+          </div>
+          <a href="HRV.html"
+            ><div class="shop">
+              <p>Buy Now</p>
+            </div></a
+          >
+        </div>
+        <!-- Honda Civic Type R -->
+        <div class="car-card filter sport">
+          <img
+            src="assets/img/typer_white.png"
+            alt="Honda Civic Type R"
+            width="300"
+            height="200"
+          />
+          <div class="car-info">
+            <h3>Honda Civic Type R</h3>
+            <p>Sport</p>
+            <div class="price">Rp1.427.500.000</div>
+          </div>
+          <a href="typer.html"
+            ><div class="shop">
+              <p>Buy Now</p>
+            </div></a
+          >
+        </div>
+        <!-- Honda CR-V -->
+        <div class="car-card filter suv">
+          <img
+            src="assets/img/crv_red.png"
+            alt="Honda CR-V"
+            width="300"
+            height="200"
+          />
+          <div class="car-info">
+            <h3>Honda CR-V</h3>
+            <p>SUV</p>
+            <div class="price">Rp749.100.000</div>
+          </div>
+          <a href="CRV.html"
+            ><div class="shop">
+              <p>Buy Now</p>
+            </div></a
+          >
+        </div>
+        <!-- Honda City -->
+        <div class="car-card filter sedan">
+          <img
+            src="assets/img/city_white.webp"
+            alt="Honda City"
+            width="300"
+            height="200"
+          />
+          <div class="car-info">
+            <h3>Honda City RS</h3>
+            <p>Sedan</p>
+            <div class="price">Rp402.000.000</div>
+          </div>
+          <a href="city.html"
+            ><div class="shop">
+              <p>Buy Now</p>
+            </div></a
+          >
+        </div>
+        <!-- Honda Accord -->
+        <div class="car-card filter sedan">
+          <img
+            src="assets/img/accord_cover.png"
+            alt="Honda Accord"
+            width="300"
+            height="200"
+          />
+          <div class="car-info">
+            <h3>Honda Accord</h3>
+            <p>Sedan</p>
+            <div class="price">Rp959.900.000</div>
+          </div>
+          <a href="Accord.html"
+            ><div class="shop">
+              <p>Buy Now</p>
+            </div></a
+          >
+        </div>
+        <!-- Honda BR-V N7X Edition -->
+        <div class="car-card filter suv">
+          <img
+            src="assets/img/BRV_cover.png"
+            alt="Honda BRV"
+            width="300"
+            height="200"
+          />
+          <div class="car-info">
+            <h3>Honda BR-V N7X Edition</h3>
+            <p>SUV</p>
+            <div class="price">Rp292.900.000</div>
+          </div>
+          <a href="BRV.html"
+            ><div class="shop">
+              <p>Buy Now</p>
+            </div></a
+          >
+        </div>
+        <!-- Honda City Hatchback RS -->
+        <div class="car-card filter hatchback">
+          <img
+            src="assets/img/cityrs_orange.png"
+            alt="Honda City Hatchback RS"
+            width="300"
+            height="200"
+          />
+          <div class="car-info">
+            <h3>Honda City Hatchback RS</h3>
+            <p>City and Hatchback</p>
+            <div class="price">Rp352.500.000</div>
+          </div>
+          <a href="cityhrs.html"
+            ><div class="shop">
+              <p>Buy Now</p>
+            </div></a
+          >
+        </div>
+        <!-- Honda WR-V -->
+        <div class="car-card filter suv">
+          <img
+            src="assets/img/wrv_red.png"
+            alt="Honda WR-V"
+            width="300"
+            height="200"
+          />
+          <div class="car-info">
+            <h3>Honda WR-V</h3>
+            <p>SUV</p>
+            <div class="price">Rp274.900.000</div>
+          </div>
+          <a href="wrv.html"
+            ><div class="shop">
+              <p>Buy Now</p>
+            </div></a
+          >
+        </div>
+        <!-- Honda NSX -->
+        <div class="car-card filter sport">
+          <img
+            src="assets/img/nsx_cover.png"
+            alt="Honda NSX"
+            width="300"
+            height="200"
+          />
+          <div class="car-info">
+            <h3>Honda NSX</h3>
+            <p>Sport</p>
+            <div class="price">Rp3.600.000.000</div>
+          </div>
+          <a href="nsx.html"
+            ><div class="shop">
+              <p>Buy Now</p>
+            </div></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!--Why Honda-->
+    <section id="superiority" class="superiority">
+      <div class="superiority-container">
+        <h2>Why Honda?</h2>
+        <div class="superiority-list">
+          <div class="superiority-item">
+            <h3>Reliability</h3>
+            <p>
+              Honda vehicles are renowned for their outstanding reliability.
+              They consistently rank high in dependability studies, ensuring you
+              can trust your car for the long haul.
+            </p>
+          </div>
+          <div class="superiority-item">
+            <h3>Fuel Efficiency</h3>
+            <p>
+              Honda's commitment to innovation ensures their cars are among the
+              most fuel-efficient in the market. This means you save money on
+              fuel while also being kind to the environment.
+            </p>
+          </div>
+          <div class="superiority-item">
+            <h3>Resale Value</h3>
+            <p>
+              Honda cars hold their value remarkably well. Whether you plan to
+              keep your car for many years or sell it in the future, a Honda
+              will likely retain a higher resale value compared to other brands.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div class="footer__content">
+          <a href="index.html" class="footer__logo">
+            <img
+              src="assets/img/honda_logo.svg"
+              alt="Logo Honda"
+              width="200"
+              height="auto"
+            />
+          </a>
+          <p class="footer__description">
+            Experience the excellence of Honda,
+            <br />
+            vehicles known for innovation and quality.
+          </p>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Company</h3>
+          <ul class="footer__links">
+            <li>
+              <a href="AboutUs.html" class="footer__links">About</a>
+            </li>
+            <li>
+              <a href="History.html" class="footer__links">History</a>
+            </li>
+            <li>
+              <a href="store.html" class="footer__links">Shop</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Information</h3>
+          <ul class="footer__links">
+            <li>
+              <a href="ContactUs.html" class="footer__links">Contact us</a>
+            </li>
+            <li>
+              <a href="#" class="footer__links">Services</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Follow us</h3>
+          <ul class="footer__social">
+            <a
+              href="https://www.facebook.com/hondaisme"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/hondaisme"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.twitter.com/hondaisme"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/hondaisme"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <span class="footer__copy">
+        &#169;
+        <a target="_blank" href="#" class="footer__dev-link">Honda 2024</a>
+        All rights reserved
+        <p id="date"></p>
+      </span>
+    </footer>
+    <!-- Scroll Up -->
+    <a href="" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-s-line"></i>
+    </a>
+    <!-- Scripts -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

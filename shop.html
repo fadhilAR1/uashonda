@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/css/shop.css">
+    <title>Honda Shop</title>
+    <link rel="icon" href="assets/img/honda_logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+      <nav>
+        <div class="nav-bar">
+          <i class="bx bx-menu sidebarOpen"></i>
+          <span class="logo navLogo"
+            ><a href="index.html">
+              <img
+                src="assets/img/honda_logo.svg"
+                alt="Logo Honda"
+                width="200"
+                height="auto"
+              /> </a
+          ></span>
+
+          <div class="menu">
+            <div class="logo-toggle">
+              <span class="logo"
+                ><a href="#"><img src="" alt="" /></a
+              ></span>
+              <i class="bx bx-x siderbarClose"></i>
+            </div>
+
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="innovation.html">Innovations</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="History.html">History</a></li>
+              <li><a href="AboutUs.html">About Us</a></li>
+              <li><a href="ContactUs.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+     <div class="accessories-container">
+        <h1>Check Our Product</h1>
+        <div class="select-container">
+            <label for="car-select">Choose a Car :</label>
+            <select id="car-select" onchange="updateAccessories()">
+                <option value="pilih Mobil"></option>
+                <option value="civic-type-r">Civic Type R</option>
+                <option value="honda-accord">Honda Accord</option>
+                <option value="honda-brio">Honda Brio</option>
+                <option value="honda-crv">Honda CR-V</option>
+                <option value="br-v">Honda BR-V</option>
+                <option value="civic-rs">Civic RS</option>
+                <option value="hr-v">Honda HR-V</option>
+                <option value="mobilio">Mobilio</option>
+                <option value="wr-v">Honda WR-V</option>
+            </select>
+        </div>
+        <div class="grid" id="card-container">
+        </div>
+    </div>
+    <script src="assets/js/shop.js"></script>
+    <!--Footer-->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div class="footer__content">
+          <a href="#" class="footer__logo">
+            <img
+              src="assets/img/honda_logo.svg"
+              alt="Logo Honda"
+              width="200"
+              height="auto"
+            />
+          </a>
+          <p class="footer__description">
+            Experience the excellence of Honda,
+            <br />
+            vehicles known for innovation and quality.
+          </p>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Company</h3>
+          <ul class="footer__links">
+            <li>
+              <a href="AboutUs.html" class="footer__links">About</a>
+            </li>
+            <li>
+              <a href="History.html" class="footer__links">History</a>
+            </li>
+            <li>
+              <a href="store.html" class="footer__links">Shop</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Information</h3>
+          <ul class="footer__links">
+              <a href="ContactUs.html" class="footer__links">Contact us</a>
+            </li>
+            <li>
+              <a href="#" class="footer__links">Services</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Follow us</h3>
+          <ul class="footer__social">
+            <a href="https://www.facebook.com/hondaisme" target="_blank" class="footer__social-link">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/hondaisme" target="_blank" class="footer__social-link">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.twitter.com/hondaisme" target="_blank" class="footer__social-link">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/hondaisme" target="_blank" class="footer__social-link">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <span class="footer__copy">
+        &#169;
+        <a target="_blank" href="#" class="footer__dev-link">Honda 2024</a>
+        All rights reserved
+        <p id="date"></p>
+      </span>
+    </footer>
+    <!-- Scroll Up -->
+    <a href="" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-s-line"></i>
+    </a>
+    <!-- Scripts -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

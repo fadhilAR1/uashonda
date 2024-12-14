@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Automotive Website</title>
+    <link rel="stylesheet" href="assets/css/mobil.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="icon" href="assets/img/honda_logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <nav>
+      <div class="nav-bar">
+        <i class="bx bx-menu sidebarOpen"></i>
+        <span class="logo navLogo"
+          ><a href="index.html">
+            <img
+              src="assets/img/honda_logo.svg"
+              alt="Logo Honda"
+              width="200"
+              height="auto"
+            /> </a
+        ></span>
+
+        <div class="menu">
+          <div class="logo-toggle">
+            <span class="logo"
+              ><a href="#"><img src="" alt="" /></a
+            ></span>
+            <i class="bx bx-x siderbarClose"></i>
+          </div>
+
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="innovation.html">Innovations</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="History.html">History</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="header">
+      <div class="container">
+        <h1 class="logo">WHEELS TO WIN</h1>
+        <p>
+         Melaju lebih percaya diri untuk raih impianmu bersama Honda WR-V!
+        </p>
+        <a href="#keunggulan" class="btn">Selengkapnya</a>
+      </div>
+    </header>
+
+    <!-- Keunggulan Mobil Section -->
+    <section id="keunggulan" class="keunggulan">
+      <div class="container">
+        <h2>Keunggulan Mobil</h2>
+        <div class="keunggulan-list">
+          <div class="keunggulan-item">
+            <h3>Remote Engine Start</h3>
+            <p>Nyalakan mesin dari jarak jauh dan rasakan kabin yang sejuk sesaat setelah Anda memasuki mobil. Fitur ini tersedia untuk semua tipe Honda WR-V.</p>
+          </div>
+          <div class="keunggulan-item">
+            <h3>Walk-Away Auto Lock</h3>
+            <p>Pertama di kelasnya, fitur ini dapat mengunci pintu mobil secara otomatis setelah Anda pergi meninggalkan mobil.</p>
+          </div>
+          <div class="keunggulan-item">
+            <h3>Honda Sensing</h3>
+            <p>Dengan serangkaian teknologi keselamatan terkini, jadikan pengalaman berkendara lebih aman.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Spesifikasi Mobil Section -->
+    <section id="spesifikasi" class="spesifikasi">
+      <div class="container">
+        <div class="content">
+          <h2>Spesifikasi Mobil</h2>
+          <p>
+            Crossover kompak dengan desain stylish dan ground clearance tinggi. Ideal untuk perjalanan urban maupun rural dengan efisiensi bahan bakar yang baik.
+          </p>
+          <ul>
+            <li>Mesin: 1.5L i-VTEC, tenaga 121 PS</li>
+            <li>Transmisi: CVT</li>
+            <li>Velg: 16" Alloy Wheel</li>
+            <li>Lampu: LED Headlamp dan DRL</li>
+            <li>Fitur Hiburan: Layar sentuh 7 inci dengan integrasi Apple CarPlay dan Android Auto</li>
+            <li>Fitur Keamanan: Honda Sensing (varian tertentu), kamera parkir multi-angle</li>
+          </ul>
+          <a href="#contact" class="btn">Hubungi Kami</a>
+        </div>
+        <div class="image">
+          <img src="assets/img/wrv.png" alt="Spesifikasi Mobil" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact-us">
+      <div class="container">
+        <h2>Hubungi Kami</h2>
+        <form id="contact-form" action="#" method="POST">
+          <input type="text" name="name" placeholder="Nama Anda" required />
+          <input type="email" name="email" placeholder="Email Anda" required />
+          <input
+            type="number"
+            name="Phonenumber"
+            placeholder="Nomor Telepon Anda"
+            required
+          />
+          <input type="text" name="subject" placeholder="Subjek" required />
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Pesan Anda"
+            required
+          ></textarea>
+          <div class="form-submit-btn">
+          <input type="submit" value="Kirim" />
+        </div>
+        </form>
+      </div>
+    </section>
+     <!--Footer-->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div class="footer__content">
+          <a href="#" class="footer__logo">
+            <img
+              src="assets/img/honda_logo.svg"
+              alt="Logo Honda"
+              width="200"
+              height="auto"
+            />
+          </a>
+          <p class="footer__description">
+            Experience the excellence of Honda,
+            <br />
+            vehicles known for innovation and quality.
+          </p>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Company</h3>
+          <ul class="footer__links">
+            <li>
+              <a href="AboutUs.html" class="footer__links">About</a>
+            </li>
+            <li>
+              <a href="History.html" class="footer__links">History</a>
+            </li>
+            <li>
+              <a href="store.html" class="footer__links">Shop</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Information</h3>
+          <ul class="footer__links">
+            <li>
+              <a href="ContactUs.html" class="footer__links">Contact us</a>
+            </li>
+            <li>
+              <a href="#" class="footer__links">Services</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Follow us</h3>
+          <ul class="footer__social">
+            <a
+              href="https://www.facebook.com/hondaisme"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/hondaisme"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.twitter.com/hondaisme"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/hondaisme"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <span class="footer__copy">
+        &#169;
+        <a target="_blank" href="#" class="footer__dev-link">Honda 2024</a>
+        All rights reserved
+        <p id="date"></p>
+      </span>
+    </footer>
+    <!-- Scroll Up -->
+    <a href="" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-s-line"></i>
+    </a>
+    <!-- Scripts -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/form.js"></script>
+  </body>
+</html>
